@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shavonne Yang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+              mono: ['"Courier New"', 'Courier', 'monospace'],
+            },
+            colors: {
+              'braun-bg': '#F4F4F0',
+              'braun-text': '#333333',
+              'braun-orange': '#FF4400',
+              'braun-gray': '#E5E5E1',
+            },
+            boxShadow: {
+              'braun': '0 20px 40px rgba(0,0,0,0.08)',
+              'braun-sm': '0 4px 12px rgba(0,0,0,0.05)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F4F4F0;
+        color: #333333;
+        cursor: none; /* Hide default cursor */
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+      
+      /* Speaker Mesh Pattern */
+      .speaker-mesh {
+        background-color: #F4F4F0;
+        background-image: radial-gradient(#333333 1.2px, transparent 1.2px);
+        background-size: 4px 4px;
+      }
+
+      /* Utilities for custom cursor interactions */
+      a, button {
+        cursor: none; /* Ensure interactive elements don't show default pointer */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-braun-bg text-braun-text antialiased font-sans">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
